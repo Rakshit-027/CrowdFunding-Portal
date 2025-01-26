@@ -1,0 +1,33 @@
+import React from "react";
+import DonorDashboard from "./components/Dashboard/DonorDashboard";
+import CreatorDashboard from "./components/Dashboard/CreatorDashboard";
+
+const campaigns = [
+  {
+    id: 1,
+    title: "Help Flood Victims",
+    description: "Support families affected by recent floods.",
+    targetAmount: 5000,
+    imageUrl: "https://via.placeholder.com/300",
+    progress: 60,
+  },
+  {
+    id: 2,
+    title: "Education for All",
+    description: "Provide education to underprivileged children.",
+    targetAmount: 10000,
+    imageUrl: "https://via.placeholder.com/300",
+    progress: 30,
+  },
+];
+
+const App = () => {
+  return (
+    <div>
+      <DonorDashboard campaigns={campaigns} />
+      <CreatorDashboard campaigns={campaigns} />
+    </div>
+  );
+};
+
+export default App;

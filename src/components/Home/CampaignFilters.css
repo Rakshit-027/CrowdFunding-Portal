@@ -1,0 +1,57 @@
+/* src/components/CampaignFilters/CampaignFilters.css */
+
+.campaign-filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .filter-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .filter-section label {
+    font-size: 16px;
+    margin-right: 10px;
+    color: #333;
+  }
+  
+  .filter-section select,
+  .filter-section input {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .filter-section select:focus,
+  .filter-section input:focus {
+    border-color: #007bff;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .campaign-filters {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .filter-section {
+      width: 100%;
+    }
+  
+    .filter-section select,
+    .filter-section input {
+      width: 100%;
+    }
+  }

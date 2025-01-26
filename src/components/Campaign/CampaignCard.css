@@ -1,0 +1,109 @@
+/* src/components/Campaign/CampaignCard.css */
+
+/* General card container */
+.campaign-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Full width on smaller screens */
+  max-width: 400px; /* Limit width on larger screens */
+  margin: 0 auto 20px; /* Center cards on larger screens */
+}
+
+/* Campaign image */
+.campaign-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Campaign content */
+.campaign-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+/* Campaign title */
+.campaign-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Campaign description */
+.campaign-description {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* Progress bar container */
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+/* Progress bar fill */
+.progress-bar-fill {
+  height: 100%;
+  background-color: #28a745;
+  transition: width 0.3s ease;
+}
+
+/* Campaign stats */
+.campaign-stats {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Donate button */
+.donate-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: background-color 0.3s ease;
+}
+
+.donate-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+  /* For tablets and larger screens */
+  .campaign-card {
+    max-width: 600px; /* Wider cards on larger screens */
+  }
+
+  .campaign-image {
+    height: 250px; /* Larger image on larger screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  /* For desktops and larger screens */
+  .campaign-card {
+    max-width: 800px; /* Even wider cards on larger screens */
+  }
+
+  .campaign-image {
+    height: 300px; /* Even larger image on larger screens */
+  }
+}

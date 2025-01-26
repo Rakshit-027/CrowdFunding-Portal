@@ -1,0 +1,154 @@
+/* src/components/Dashboard/CreatorDashboard.css */
+
+.creator-dashboard {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+  }
+  
+  .dashboard-title {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .dashboard-subtitle {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .campaign-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .campaign-card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .campaign-image {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .campaign-title {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .campaign-description {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.4;
+  }
+  
+  .campaign-target {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .campaign-target strong {
+    color: #007bff;
+  }
+  
+  .campaign-progress {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .campaign-progress strong {
+    color: #28a745;
+  }
+  
+  .edit-button {
+    background: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .edit-button:hover {
+    background: #218838;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .creator-dashboard {
+      padding: 15px;
+    }
+  
+    .dashboard-title {
+      font-size: 24px;
+    }
+  
+    .dashboard-subtitle {
+      font-size: 14px;
+    }
+  
+    .campaign-card {
+      padding: 15px;
+    }
+  
+    .campaign-title {
+      font-size: 18px;
+    }
+  
+    .campaign-description,
+    .campaign-target,
+    .campaign-progress {
+      font-size: 12px;
+    }
+  
+    .edit-button {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .creator-dashboard {
+      padding: 10px;
+    }
+  
+    .dashboard-title {
+      font-size: 20px;
+    }
+  
+    .dashboard-subtitle {
+      font-size: 12px;
+    }
+  
+    .campaign-card {
+      padding: 10px;
+    }
+  
+    .campaign-title {
+      font-size: 16px;
+    }
+  
+    .campaign-description,
+    .campaign-target,
+    .campaign-progress {
+      font-size: 10px;
+    }
+  
+    .edit-button {
+      font-size: 12px;
+    }
+  }
