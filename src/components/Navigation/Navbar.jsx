@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -16,16 +17,16 @@ const Navbar = () => {
       <div className={`navbar-menu ${isOpen ? "open" : ""}`}>
         <ul className="navbar-links">
           <li>
-            <a href="#home">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="#about">About</a>
+            <Link to="/about">About</Link>
           </li>
           <li>
-            <a href="#campaigns">Campaigns</a>
+            <Link to="/campaign/:id">Campaigns</Link>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <Link to="/create-campaign">Create Campaign</Link>
           </li>
         </ul>
         <div className="navbar-buttons">
